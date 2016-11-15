@@ -1,7 +1,7 @@
 import angular from 'angular';
 
-import { ContactController } from './controller/main';
+import { Infocontroller } from './controller/main';
 
 angular
   .module('app', [])
-  .controller('ContactController',ContactController );
+  .controller('Infocontroller',Infocontroller );
