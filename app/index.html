@@ -24,21 +24,25 @@
            <input class="input" type="text" placeholder="Text input" ng-model="Info.Web" ng-keyup="validateWeb(Info.Web)"> {{ errors.Web}}
       </p>
       
-           <textarea class="textarea" placeholder="Textarea" ng-model="Info.area"></textarea>
+           <textarea class="textarea" placeholder="Textarea" ng-model="Info.Area" ng-keyup="validateArea(Info.Area)" >{</textarea>
+           <span>{{errors.Area}} </span>
       </p>
 
            <button class="button is-primary">Submit</button>
-       <form>
-       <h1>test</h1>
+       </form>
+       
        <ul cliass= "Messages"> 
-           <li ng-repeat= "Message in Messages">
-           {{Info.name}}
-           {{Info.emial}}
-           {{Info.website}}
-            {{Info.area}}
+           <li ng-repeat= "message in Messages">
+             {{message.name}}
+             {{message.emial}}
+             {{message.website}}
+              {{message.Area}}
+              {{message._id}}
+             <button ng-click="remove(message)">Delete It!</button>
            </li>
         </ul>
     </div>
+
     <script src="js/bundle.js"></script>
   </body>
 </html>
