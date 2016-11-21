@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
   <body ng-app="app" >
 
   <div class="Box">
-  <h1>Contact Us</h1> -->
+  <h1>Contact Us</h1>
     <div class="container" ng-controller="Infocontroller">
 <form ng-submit="tallyInfo(Info)">
      <label class="label">Name</label>
         <p class="control1">
            <input class="input" type="text" placeholder="Text input" ng-model="Info.name" ng-keyup="validateName(Info.name)"> {{ errors.name }}
        </p>
-        <!--    <label class="label">Email</label>
+           <label class="label">Email</label>
        <p class="control2">
            <input class="input" type="text" placeholder="Text input" ng-model="Info.email" ng-keyup="validateEmail(Info.email)">{{ errors.email }}
-      </p> -->
-<!--        <p class="control3ckb">
+      </p>
+       <p class="control3ckb">
            <label class="label">Website</label>
            <input class="input" type="text" placeholder="Text input" ng-model="Info.Web" ng-keyup="validateWeb(Info.Web)"> {{ errors.Web}}
       </p>
@@ -40,7 +40,7 @@
              <div class="styla">Email<span>{{message.email}}</span></div>
              <div class="styla">Websight:<span>{{message.Web}}</span>
               <div class=styla>Message<span>{{message.Area}}</span></div>
-             <!-- <button ng-click="remove(message)">Delete It!</button>
+             <button ng-click="remove(message)">Delete It!</button>
            </li>
         </ul>
         </div>
@@ -51,4 +51,3 @@
     <script src="js/bundle.js"></script>
   </body>
 </html>
- --> -->
