@@ -54,4 +54,4 @@ All tasks are listed below, but ideally you will just need to run `gulp start` a
 - `npm run deploy`: This will deploy your application to Surge.sh for you
 - `npm run lint`: This will run ESLint on your `/src/js` folder
  
-My link:http://tiy-jeremyspringer-angularj-scontac-tform.surge.sh
+My link:http://tiy-jeremyspringer-angularjs-form.surge.sh
