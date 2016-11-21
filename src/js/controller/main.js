@@ -30,25 +30,34 @@ function Infocontroller ($scope,$http){
       }
   };
 
-  $scope.validateEmail=function(emial){
-  	if (emial ===''){
+  $scope.validateEmail=function(email){
+  	if (!email.startWith('http')){
+       
+       $scope.errors.email = "Email cannot be left empty"
+       
+       return false;
+     }
 
-  		$scope.errors.email = "Email cannot be left empty"
-	}else{
-
-		   $scope.errors.email=''
-         }
-  }
+  		if(email===''){
+        $scope.errors.email='';
+         };
+         return true;
+       };
+  
 
 $scope.validateWeb=function(Web){
-  	if (Web ===''){
+  	if (!Web.startWith('http')){
 
   		$scope.errors.Web = "Website must start with http://"
-	}else{
-
-		   $scope.errors.Web=''
-         }
+	 return false;
   }
+       
+      if(Web ===''){
+		    $scope.errors.Web='';
+         }
+         return true;
+      };
+  
 $scope.validateArea=function(Area){
   	if (Area ===''){
 
@@ -71,6 +80,7 @@ $scope.validateArea=function(Area){
     $scope.remove = function (message) {
     	console.log(message._id, $scope.Messages.length)
         $http.delete(SERVER_URL + message._id).then(function (page) {
+
         	console.log("response data: ", page)
             $scope.Messages = $scope.Messages.filter(function (x) {
                 return x._id !== message._id;

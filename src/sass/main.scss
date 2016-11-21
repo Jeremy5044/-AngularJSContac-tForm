@@ -1,7 +1,93 @@
 @import 'bulma';
+ * {
+box-sizing: border-box;
+}
+
+.body{
+	background: initial;
+	height: 700px;
+}
 
 .container {
     width: 500px;
     margin: 80px auto;
+
+}
+.Box{
+	    width: 536px;
+    height: 530px;
+    margin: 80px auto;
+    background: slategray;
+    border-radius: 17px;
+    box-shadow: black 8px 19px 92px;
+    border-color: black;
+    border: solid blanchedalmond;
+}
+
+li{
+      width: 400px;
+    border: solid;
+    margin: left;
+    margin-left: 45px;
+    margin-top: 11px;
+    border-radius: 7px;
+    box-shadow: black 8px 19px 106px;
+    background: lightgray;
+    border-color: blanchedalmond;
+    height: 83px;
+    overflow: overlay;
+}
+.styla{
+	width: 130px;
+    height: 14px;
+    color: black;
+    padding: 0px;
+    margin-right: -11px;
+    font-size: x-small;
+
+}
+.button2{
+	
+}
+.styla1{
+	width: 126px;
+	margin-left: 3px;
+    height: 85px;
+    
+}
+.name{
+	
+    width:142px;
+       
+}
+button{
+	box-shadow: black 8px 19px 106px;
+    margin-top: 35px;
+    width: 400px;
+    /* margin-left: 37px; */
+    margin-left: 50px;
+    height: 45px;
+}
+ul{
+	margin-top: 72px;
+	    width: 1000px;
+    
+}
+.input{
+	    border:solid blanchedalmond;
+}
+.textarea{
+	    border: solid blanchedalmond;
+}
+h1{
+	        font-size: -webkit-xxx-large;
+    text-align: center;
+    color: blanchedalmond;
+    height: 4px;
+}
+span{
+	    font-style: inherit;
+    font-weight: inherit;
+    margin-left: 9px;
 
 }
